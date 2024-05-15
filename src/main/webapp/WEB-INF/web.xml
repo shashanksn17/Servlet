@@ -5,6 +5,18 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <welcome-file-list>
-  <welcome-file>home.html</welcome-file>
+  <welcome-file>login.html</welcome-file>
   </welcome-file-list>
+  
+
+  
+   <error-page>
+  <error-code>405</error-code>
+  <location>/405.html</location>
+  </error-page>
+  
+   <error-page>
+  <exception-type>java.lang.NullPointerException</exception-type>
+  <location>/500.html</location>
+  </error-page>
 </web-app>
